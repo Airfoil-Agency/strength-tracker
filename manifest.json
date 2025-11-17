@@ -1,0 +1,24 @@
+{
+  "name": "Tatanka Strength - 20 Week Program",
+  "short_name": "Tatanka Strength",
+  "description": "Track your 20-week strength training program. Bench Press 185→225 lbs, Back Squat 225→300 lbs",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#001f3f",
+  "theme_color": "#CC5500",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
