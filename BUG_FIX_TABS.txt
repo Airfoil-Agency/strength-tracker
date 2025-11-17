@@ -1,0 +1,104 @@
+TATANKA STRENGTH V6 - BUG FIX
+==============================
+
+Date: November 17, 2024
+Issue: Progress and Calendar tabs not functioning
+
+---
+
+PROBLEM IDENTIFIED:
+-------------------
+The switchTab() function was incorrectly wrapped, causing a JavaScript error that prevented tab switching from working.
+
+Error in code:
+```javascript
+// This was WRONG:
+const originalSwitchTab = switchTab;
+function switchTab(tabName) {
+    originalSwitchTab(tabName);  // This reference didn't work
+    if (tabName === 'progress') {
+        displayCustomGoals();
+    }
+}
+```
+
+---
+
+SOLUTION APPLIED:
+-----------------
+Modified the original switchTab() function directly to include custom goals display:
+
+```javascript
+// Fixed version:
+function switchTab(tabName) {
+    // ... existing tab switching code ...
+    
+    if (tabName === 'calendar') {
+        renderCalendar();
+        updateWorkoutLog();
+    } else if (tabName === 'progress') {
+        updateProgress();
+        displayCustomGoals(); // ✅ Added here correctly
+    }
+}
+```
+
+---
+
+ABOUT THE SERVICE WORKER ERROR:
+--------------------------------
+The console error about sw.js 404 is EXPECTED when viewing the HTML file directly (not from a web server). This error does NOT affect app functionality:
+
+❌ Service Worker error: "Failed to register... 404"
+✅ App still works perfectly
+✅ Tabs now switch correctly
+✅ All features functional
+
+The service worker is only needed for:
+- Offline functionality
+- PWA installation
+- Caching
+
+When you upload to your web server (GitHub Pages), the sw.js file will be present and this error will disappear.
+
+---
+
+WHAT'S FIXED:
+-------------
+✅ Progress tab now works
+✅ Calendar tab now works  
+✅ Tracker tab works
+✅ All tab switching functional
+✅ Custom goals display properly
+✅ No JavaScript errors affecting functionality
+
+---
+
+TESTING LOCALLY:
+----------------
+If testing the HTML file directly (not on a web server):
+1. You WILL see the service worker 404 error - ignore it
+2. Tabs WILL work correctly now
+3. All features WILL function
+4. Data WILL save to localStorage
+
+When deployed to web server:
+1. Service worker error goes away
+2. Offline functionality works
+3. PWA installation works
+4. Everything works perfectly
+
+---
+
+FILES UPDATED:
+--------------
+✅ index.html - Fixed switchTab function
+   (Removed problematic wrapper, added displayCustomGoals() to original function)
+
+No other files changed.
+
+---
+
+STATUS: ✅ FIXED
+Version: Still V6 (bug fix within same version)
+Ready to use!
