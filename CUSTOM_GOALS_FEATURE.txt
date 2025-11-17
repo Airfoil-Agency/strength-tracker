@@ -1,0 +1,205 @@
+TATANKA STRENGTH TRACKER - CUSTOM GOALS FEATURE
+================================================
+
+✅ COMPLETED UPDATES
+--------------------
+
+## Changes Made (as requested):
+
+### 1. ✅ "My Goals" Section Header
+- **REMOVED:** Target/arrow emoji (🎯) from "My Goals" heading
+- **ADDED:** Centered text alignment for "My Goals" heading
+- Header now displays as clean "My Goals" centered above the goal circles
+
+### 2. ✅ Custom Goals Functionality
+Added complete custom goal tracking system allowing users to:
+- Create their own personalized strength goals
+- Track progress toward each goal
+- Delete goals when no longer needed
+
+### 3. ✅ Exercise Selection (Workout A & B Only)
+- Dropdown populated ONLY with exercises from Workout A and Workout B
+- Exercises include:
+  **Workout A (Upper Body):**
+  - Bench Press
+  - Incline Dumbbell Press
+  - Close-Grip Bench Press
+  - Barbell Rows
+  - Lat Pulldowns
+  - Dumbbell Shoulder Press
+  - Dumbbell Curls
+  - Plank
+
+  **Workout B (Lower Body):**
+  - Back Squat
+  - Romanian Deadlift
+  - Leg Press
+  - Bulgarian Split Squats
+  - Leg Curls
+  - Calf Raises
+  - Ab Wheel Rollouts
+
+### 4. ✅ Goal Tracker Display
+Each custom goal shows:
+- Exercise name
+- Current best: Your highest recorded weight/time for that exercise
+- Goal target: The weight/time you're aiming for
+- Progress bar: Visual indicator showing percentage toward goal
+- Delete button: Remove goals you no longer want
+
+---
+
+## NEW SECTIONS ADDED TO PROGRESS TAB:
+
+### "Your Custom Goals" Section
+- Displays all user-created goals
+- Shows progress bars for each goal
+- Updates automatically when workouts are completed
+- Shows "No custom goals yet" message when empty
+
+### "Add New Goal" Form
+- **Exercise Dropdown:** Select any exercise from Workout A or B
+- **Goal Input:** Enter target weight (lbs) or time (seconds for Plank)
+- **Add Goal Button:** Creates the new goal
+- Form clears automatically after adding a goal
+
+---
+
+## HOW IT WORKS:
+
+### Adding a Goal:
+1. Go to Progress tab
+2. Scroll to "Add New Goal" section
+3. Select an exercise from the dropdown
+4. Enter your goal (e.g., 225 for Bench Press)
+5. Click "Add Goal"
+6. Goal appears in "Your Custom Goals" section above
+
+### Tracking Progress:
+- The app automatically tracks your best performance for each exercise
+- "Current best" = highest weight or longest time you've logged
+- Only counts workouts where you actually performed the exercise with weight/time > 0
+- Progress bar updates automatically after each completed workout
+
+### Deleting a Goal:
+- Click the "Delete" button on any goal
+- Confirm deletion
+- Goal is removed immediately
+- You can add a new goal for that exercise anytime
+
+---
+
+## TECHNICAL DETAILS:
+
+### Data Storage:
+- Custom goals saved to localStorage
+- Goals persist across sessions
+- No data sent to any server (100% local)
+- Goals backed up with workout data
+
+### Smart Exercise Detection:
+- Automatically detects "Plank" as time-based exercise
+- Shows "seconds" unit for Plank, "lbs" for all others
+- Validates input (must be positive number)
+- Prevents duplicate goals for same exercise
+
+### Progress Calculation:
+- Searches all completed workouts
+- Finds highest weight/time for the exercise
+- Calculates percentage: (current ÷ target) × 100
+- Caps at 100% (no overflow if you exceed goal)
+
+---
+
+## WHAT WASN'T CHANGED:
+
+✅ Workout interface - NO CHANGES (as requested)
+✅ Calendar tab - NO CHANGES
+✅ Existing goal circles (Bench 225, Squat 300) - Still there
+✅ Heaviest Lifts section - NO CHANGES
+✅ All logos and branding - NO CHANGES (as requested)
+✅ Color scheme - NO CHANGES
+✅ Layout and tabs - NO CHANGES
+
+Only additions were made to the Progress tab - nothing else was modified!
+
+---
+
+## FILE SIZE:
+- Original: ~73KB
+- Updated: ~80KB (+7KB for custom goals feature)
+
+---
+
+## EXAMPLE USE CASES:
+
+### Example 1: Bench Press Goal
+- Exercise: Bench Press
+- Goal: 225 lbs
+- Current best: 185 lbs
+- Progress: 82% (185/225)
+
+### Example 2: Plank Goal
+- Exercise: Plank
+- Goal: 180 seconds (3 minutes)
+- Current best: 120 seconds
+- Progress: 67% (120/180)
+
+### Example 3: Overhead Press Goal
+- Exercise: Dumbbell Shoulder Press
+- Goal: 50 lbs each
+- Current best: 40 lbs each
+- Progress: 80% (40/50)
+
+---
+
+## VALIDATION & ERROR HANDLING:
+
+### The app prevents:
+❌ Adding goals without selecting an exercise
+❌ Adding goals with zero or negative values
+❌ Creating duplicate goals for the same exercise
+❌ Selecting exercises not in your program
+
+### User-friendly alerts:
+✅ "Please select an exercise"
+✅ "Please enter a valid goal value"
+✅ "You already have a goal for [exercise]"
+✅ "Goal added: [exercise] - [value] [unit]"
+✅ Confirmation dialog before deleting goals
+
+---
+
+## INSTALLATION:
+
+Same as before! Just replace your existing index.html file with this updated version:
+
+1. **GitHub Pages:**
+   - Upload updated index.html
+   - Commit changes
+   - Wait 1-2 minutes
+   - Refresh your app
+
+2. **Local/iOS:**
+   - Replace index.html with updated file
+   - Reopen in Safari
+   - Your data and goals are preserved!
+
+---
+
+## COMPATIBILITY:
+
+✅ Works on iPhone/iPad
+✅ Works on desktop browsers
+✅ Offline functionality preserved
+✅ All existing features intact
+✅ Backwards compatible (loads existing workout data)
+
+---
+
+Perfect for tracking your journey to:
+• 225 lb Bench Press 💪
+• 300 lb Back Squat 🏋️
+• Plus any other strength goals you set! 🎯
+
+Michael - Your custom goals feature is ready to use!
