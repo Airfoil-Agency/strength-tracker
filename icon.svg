@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect fill="#CC5500" width="512" height="512" rx="100"/>
+  <g fill="#FFFFFF">
+    <!-- Left weight -->
+    <rect x="60" y="180" width="60" height="152" rx="8"/>
+    <rect x="50" y="160" width="80" height="30" rx="4"/>
+    <rect x="50" y="322" width="80" height="30" rx="4"/>
+    
+    <!-- Right weight -->
+    <rect x="392" y="180" width="60" height="152" rx="8"/>
+    <rect x="382" y="160" width="80" height="30" rx="4"/>
+    <rect x="382" y="322" width="80" height="30" rx="4"/>
+    
+    <!-- Bar -->
+    <rect x="120" y="240" width="272" height="32" rx="4"/>
+    
+    <!-- Grip marks -->
+    <rect x="220" y="245" width="3" height="22" opacity="0.3"/>
+    <rect x="230" y="245" width="3" height="22" opacity="0.3"/>
+    <rect x="240" y="245" width="3" height="22" opacity="0.3"/>
+    <rect x="250" y="245" width="3" height="22" opacity="0.3"/>
+    <rect x="260" y="245" width="3" height="22" opacity="0.3"/>
+    <rect x="270" y="245" width="3" height="22" opacity="0.3"/>
+    <rect x="280" y="245" width="3" height="22" opacity="0.3"/>
+    <rect x="290" y="245" width="3" height="22" opacity="0.3"/>
+  </g>
+</svg>
