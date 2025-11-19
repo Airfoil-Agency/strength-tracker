@@ -1,0 +1,166 @@
+🦬 TATANKA STRENGTH V11 - PROGRAM BUILDER (Phase 1 MVP)
+=========================================================
+
+VERSION: 11.0
+DATE: November 19, 2025
+MAJOR FEATURE: Custom workout program builder
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ NEW FEATURE: PROGRAM BUILDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Users can now fully customize their workout programs!
+
+**What's New:**
+- ⚙️ New "Program" tab (4th tab)
+- 📚 Exercise library with 50 exercises
+- ✏️ Edit existing exercises
+- ➕ Add new exercises from library
+- 🗑️ Delete exercises
+- 🔄 Reset to default program
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 EXERCISE LIBRARY (50 Total Exercises)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**💪 UPPER BODY (20 exercises)**
+1. Bench Press
+2. Incline Dumbbell Press
+3. Close-Grip Bench Press
+4. Barbell Rows
+5. Lat Pulldowns
+6. Dumbbell Shoulder Press
+7. Dumbbell Curls
+8. Tricep Pushdowns ✨ NEW
+9. Cable Rows ✨ NEW
+10. Cable Curls ✨ NEW
+11. Pec Flys ✨ NEW
+12. Lateral Raises ✨ NEW
+13. Bent Over Row ✨ NEW
+14. Power Clean ✨ NEW
+15. Overhead Barbell Press ✨ NEW
+16. Dips ✨ NEW
+17. Pull-ups ✨ NEW
+18. Face Pulls
+19. Hammer Curls
+20. Chest Press Machine
+
+**🦵 LOWER BODY (20 exercises)**
+1. Back Squat
+2. Romanian Deadlift
+3. Leg Press
+4. Walking Lunges
+5. Leg Curls
+6. Calf Raises
+7. Lunges ✨ NEW
+8. Hamstring Curls ✨ NEW
+9. Leg Extensions ✨ NEW
+10. Single-leg Romanian Deadlift ✨ NEW
+11. Step-ups ✨ NEW
+12. Box Jumps ✨ NEW
+13. Front Squat
+14. Bulgarian Split Squat
+15. Goblet Squat
+16. Glute Bridges
+17. Hip Thrusts
+18. Seated Calf Raises
+19. Leg Press (Single Leg)
+20. Sumo Deadlift
+
+**🎯 CORE (10 exercises)**
+1. Plank (time-based, no reps)
+2. Russian Twists ✨ NEW
+3. Inclined Sit-ups ✨ NEW
+4. Ab Roll Outs ✨ NEW
+5. Ab Crunches ✨ NEW
+6. Plank with Rotation ✨ NEW
+7. Push-ups ✨ NEW
+8. Plank with Shoulder Taps ✨ NEW
+9. Hanging Leg Raises ✨ NEW
+10. Mountain Climbers
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 HOW TO USE THE PROGRAM BUILDER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Step 1: Access Program Tab**
+- Tap the "⚙️ Program" tab (4th tab)
+- See your current Workout A and Workout B exercises
+
+**Step 2: Edit Existing Exercises**
+- Tap "Edit" on any exercise
+- Adjust sets, reps, and starting weight
+- Tap "Save Changes"
+
+**Step 3: Delete Exercises**
+- Tap "Delete" on any exercise
+- Confirm deletion
+- Exercise removed from your program
+
+**Step 4: Add New Exercises**
+- Tap "➕ Add Exercise to Workout A/B"
+- Browse 50 exercises by category:
+  - All (default)
+  - Upper Body (20)
+  - Lower Body (20)
+  - Core (10)
+- Tap "+" next to any exercise to add it
+
+**Step 5: Reset if Needed**
+- Tap "🔄 Reset to Default Program"
+- Confirms before resetting
+- Restores original 20-week program
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📥 DOWNLOAD V11 FILES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Files ready for deployment:
+- index.html (113 KB) - Includes all new program builder code
+- sw.js (2.1 KB) - Updated to V11 cache
+
+Upload both to: airfoil-agency/TatankaStrength
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 KEY FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Exercise Library:**
+- 50 total exercises
+- Organized by category (Upper, Lower, Core)
+- Default values for sets/reps/weight
+- 5 lb increments for all weights
+
+**Program Customization:**
+- Edit any exercise parameters
+- Add unlimited exercises from library
+- Delete exercises with confirmation
+- Changes save automatically (localStorage)
+- Workout tab uses custom program
+
+**Safety Features:**
+- Reset to default anytime
+- Confirmation on deletions
+- Original program never lost
+- Workout history preserved
+
+**Special Handling:**
+- Plank: Time-based only (no reps shown)
+- Bodyweight exercises: 0 lbs default
+- Can add same exercise multiple times
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 This is Phase 1 MVP - Foundation for future enhancements!
+
+Next features: Workout C/D/E, drag-to-reorder, templates, 
+auto-progression, and more!
+
+Enjoy your custom program builder! 💪🦬
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
